@@ -25,3 +25,4 @@ type exa >/dev/null 2>&1 && alias ll='exa --header --long'
 type exa >/dev/null 2>&1 && alias lll='exa --header --long --all'
 type exa >/dev/null 2>&1 && alias tree='exa --tree'
 type podman >/dev/null 2>&1 && alias docker="podman"
+type io.neovim.nvim >/dev/null 2>&1 && alias nvim="io.neovim.nvim"

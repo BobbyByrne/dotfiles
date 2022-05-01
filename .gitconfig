@@ -1,3 +1,5 @@
 [user]
 	name = BobbyByrne
 	email = github@bobby.mozmail.com
+[init]
+	defaultBranch = main

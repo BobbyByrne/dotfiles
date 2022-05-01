@@ -7,10 +7,10 @@
 ########## Variables
 
 # dotfiles directory
-dir=$(dirname $(readlink -f $0))
+dir="/home/bobby/Projects$(dirname $(readlink -f $0))"
 
 # old dotfiles backup directory
-olddir=$(dirname $(readlink -f $0))/backups
+olddir="$dir/backups"
 
 # list of files/folders to symlink in homedir
 files=(

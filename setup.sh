@@ -7,14 +7,13 @@
 ########## Variables
 
 # dotfiles directory
-dir="/home/bobby/Projects$(dirname $(readlink -f $0))"
+dir="$(dirname $(readlink -f $0))"
 
 # old dotfiles backup directory
 olddir="$dir/backups"
 
 # list of files/folders to symlink in homedir
 files=(
-    ".bash_profile"
     ".profile"
     ".bashrc"
     ".bash_aliases"
@@ -32,7 +31,7 @@ echo "done"
 # from the homedir to any files in the dotfiles directory specified in $files
 for dot_file in ${files[@]}; do
     echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/$dot_file $olddir/$dot_file
+    mv ~/$dot_file /$olddir/$dot_file
     echo "Creating symlink to $dot_file in home directory."
     ln -s $dir/$dot_file ~/$dot_file
 done

@@ -3,3 +3,5 @@
 	email = github@bobby.mozmail.com
 [init]
 	defaultBranch = main
+[safe]
+	directory = /home/bobby/Projects

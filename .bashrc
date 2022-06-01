@@ -101,3 +101,6 @@ filesToExec=(
 for t in ${filesToExec[@]}; do
     [ -f "$t" ] && \. "$t"
 done
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

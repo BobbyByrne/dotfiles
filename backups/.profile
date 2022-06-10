@@ -1,1 +1,1 @@
-/home/bobby/Projects/dotfiles/.profile
+. "$HOME/.cargo/env"
